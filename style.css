@@ -8,8 +8,7 @@ body {
 }
 
 .bottomLogo {
-position: fixed;
-    
+position: fixed;   
    bottom: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -41,16 +40,13 @@ position: fixed;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+
 }
 
 .outerContainer {
     text-align: center;
     position: relative;
-    top:18em;
-
+    top:19em;
 
 }
 
@@ -70,7 +66,6 @@ a:hover {
 
 .zoom {
   padding: 50px;
-  background-color: green;
   transition: transform .2s; /* Animation */
   width: 200px;
   height: 200px;
@@ -78,7 +73,7 @@ a:hover {
 }
 
 .zoom:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
