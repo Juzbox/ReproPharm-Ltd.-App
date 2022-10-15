@@ -12,23 +12,84 @@
 </head>
 
 <body>
-    <div class="welcomeText">
-    Welcome to the ReproPharm Ltd.'s patient database.
-    </div>
-<div class="outerContainer">
-<!--<a href="javascript:randomlink()">Click here for random link</a>-->
-    <div class="zoom">
-<a href="javascript:randomlink()">
-<button class="button">Access your files</button>
-</a>
-        </div>
-    <div class="bottomLogo">
-    <img src="top_appBanner.png" alt="ReproFarmLogo" style="width:35%" >
-    
-    </div>
-    </div>
-    
+<div class = "topLogo">
+<img src="top_appBanner.png" alt="ReproFarmLogo" style="width:35%" >
+</div>
+
+  <div class="flex-container">
+
+    <div><!-- Patient number -->
+      <div class="patientInfo">
+        <br><br> Your appointment <br> number:
+      </div>
+    <div class="patientNum">
     <script>
+          var patient = Math.floor(30+10*Math.random())
+            document.write(patient);
+      </script>
+    </div>
+
+    </div>
+    <div></div>
+    <div>
+    <!-- <div> Text -->
+    <div class = welcomeText>
+Hi! I am the automated medical concierge. Please check your appointment number above.
+<br><br>While you wait you can choose to consult your medical file or hear more about our services.
+      <input type="checkbox" class="read-more-state" id="post-2" />
+
+      <div class="read-more-wrap">
+        <!-- <li>lorem</li>
+        <li>lorem 2</li> -->
+        <div class="read-more-target">
+<div class=patientProfile>
+          <script language="JavaScript">
+          <!--
+          var r_text = new Array ();
+          r_text[0] = "<b>Client number:</b> 25812329 <br><b>Appointment Type:</b> Conception Planning <br><b>Family Type:</b> 2 Parent Unit <br><b>Journey Stage:</b> Induction <br><br><br><b>Client notes:</b> The client is currently in the <b>induction phase</b> of their extra-corporeal reproductive journey, and are due to plan the conception phase. The client intends to use <b>donor gametes</b> for the fertilization, and is considering an <b>open donation</b>. The client has been residing in the Netherlands for the last 1 month on a <b>Reproductive Tourist visa</b>, and plans to go back and forth between their home country and the Netherlands for the duration of the reproductive journey. The client and partner(s) are part of a <b>2 parent unit</b> and do not intend to co-parent with the donor. The client <b>requires legal counsel</b> around the procedure to ensure the <b>requisite nationality for the baby</b>, post birth. The client is <b>due to meet the counselor</b> in the coming week.";
+          r_text[1] = "<b>Client number:</b> 25810836 <br><b>Appointment Type:</b> Womb Visitation <br><b>Family Type:</b> 3 Parent Unit <br><b>Journey Stage:</b> Gestation <br><br><br><b>Client notes:</b> The client is currently in the <b>gestation phase</b> of their extra-corporeal reproductive journey, and their fetus has reached the <b>third trimester</b> with <b>no genetic concerns</b>. The <b>gametes used</b> have been <b>retrieved from the client</b> / or partner(s). The client has been residing in the Netherlands for the last 8 months on a <b>Reproductive Tourist visa</b>, and plans to fly the baby back 2 weeks post birth. The client and partner(s) are part of a <b>3 parent unit</b> and <b>require legal counsel</b> around <b>parental rights</b> and the procedure to ensure the <b>requisite nationality for the baby</b>, post birth. The client is <b>due to meet the doula</b> in the coming week.";
+          r_text[2] = "<b>Client number:</b> 25814694 <br><b>Appointment Type:</b> Gamete Retrieval <br><b>Family Type:</b> 1 Parent Unit <br><b>Journey Stage:</b> Conception <br><br><br><b>Client notes:</b> The client is currently in the <b>conception phase</b> of their extra-corporeal reproductive journey, and are due for gamete retrieval. The client intends to use both <b>donor and own gametes</b> for the fertilization. The client has been residing in the Netherlands for the last 2 months on a <b>Reproductive Tourist visa</b>, and plans to stay here till the end of the journey. The client is part of a <b>3 parent unit</b> and <b>requires legal counsel</b> around <b>parental rights as a single male parent</b>, as well as to ensure the <b>requisite nationality for the baby</b>, post birth. The client is <b>due to meet the counselor</b> in the coming week.";
+          r_text[3] = "<b>Client number:</b> 25813960 <br><b>Appointment Type:</b> Follow-up Counseling <br><b>Family Type:</b> 2 Parent Unit <br><b>Journey Stage:</b> Conception <br><br><br><b>Client notes:</b> The client is currently in the <b>conception phase</b> of their extra-corporeal reproductive journey. The client intends to use donor gametes for fertilization, and hopes to <b>co-parent with the donor</b>. The client is part of a 2 parent co-parenting arrangement and requires legal counsel around <b>co-parenting rights</b>. The client has requested a <b>counseling session on geriatric parenting</b>.";
+          r_text[4] = "<b>Client number:</b> 25815003 <br><b>Appointment Type:</b> Baseline Ultrasound <br><b>Family Type:</b> 4 Parent Unit <br><b>Journey Stage:</b> Conception <br><br><br><b>Client notes:</b> The client is currently in the <b>conception phase</b> of their extra-corporeal reproductive journey, and is due for their <b>baseline ultrasound</b>. The client intends to use their <b>own or partner’s gametes</b> for fertilization. The client and partner(s) are part of a <b>4 parent unit</b> and <b>require legal counsel</b> around <b>parental rights for a multi-parent unit</b>. The client is <b>due to meet the counselor</b> in the coming week.";
+
+          var i = Math.floor(5*Math.random())
+
+          document.write(r_text[i]);
+          </script>
+
+</div>
+        </div>
+      </div>
+
+
+
+      <label for="post-2" class="read-more-trigger"></label>
+      <button class="button">Discover our services (🎧)</button>
+      <script type="text/javascript">
+      const audio = new Audio("http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3");
+      const buttons = document.querySelectorAll("button");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          audio.play();
+        });
+      });
+
+      </script>
+</div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- <script>
 // Regular Array
 var random = new Array();
 random[0] = "https://repropharm.notion.site/Sam-Byers-9e7cf65889e44c9bb083d658ac099d85";
@@ -41,8 +102,8 @@ random[1] = "https://repropharm.notion.site/Sujata-Joshi-7aed9712fc2d4bbfae9f71c
 function randomlink() {
 window.location = random[Math.floor(Math.random()*random.length)];
 }
-</script>
-    
-    
+</script> -->
+
+
     </body>
 </html>
